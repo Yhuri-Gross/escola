@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f35a07e0-2662-401c-aa43-edd6c179f1ff" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,11 +47,20 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Marjory Matos/Downloads/escola/escola"
+    "last_opened_file_path": "C:/Users/Marjory Matos/Downloads/escola/escola",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="EscolaApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <envs>
+        <env name="DATABASE_PASSWORD" value="rootroot" />
+        <env name="DATABASE_URL" value="jdbc:postgresql://localhost:5432/escola" />
+        <env name="DATABASE_USERNAME" value="postgres" />
+      </envs>
       <option name="MAIN_CLASS_NAME" value="com.generation.escola.EscolaApplication" />
       <module name="escola" />
       <method v="2">
