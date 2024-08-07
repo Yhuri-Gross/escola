@@ -1,10 +1,11 @@
 # Etapa 1: Construir o aplicativo
-FROM maven:3.8.6-jdk-11 AS build
+FROM maven:3.8.5-openjdk-17 AS builder
 WORKDIR /app
 COPY . /app
-RUN mvn clean install
+RUN mvn clean install -DskipTests
 
 # Etapa 2: Executar o aplicativo
-FROM openjdk:11-jre
-COPY --from=build /app/target/escola-0.0.1-SNAPSHOT.jar /app/escola.jar
-ENTRYPOINT ["java", "-jar", "/app/escola.jar"]
+FROM openjdk:17-jdk-slim
+WORKDIR /app
+COPY --from=builder /app/target/escola-0.0.1-SNAPSHOT.jar /app/escola.jar
+CMD ["java", "-jar", "escola.jar"]
