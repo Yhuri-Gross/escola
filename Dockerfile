@@ -2,7 +2,7 @@
 FROM maven:3.8.6-jdk-11 AS build
 WORKDIR /app
 COPY . /app
-RUN chmod +x mvnw && ./mvnw clean install
+RUN mvn clean install
 
 # Etapa 2: Executar o aplicativo
 FROM openjdk:11-jre
