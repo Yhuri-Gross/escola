@@ -2,7 +2,7 @@
 FROM maven:3.8.5-openjdk-17 AS builder
 WORKDIR /app
 COPY . /app
-RUN mvn clean install -DskipTests
+RUN mvn clean package -DskipTests
 
 # Etapa 2: Executar o aplicativo
 FROM openjdk:17-jdk-slim
